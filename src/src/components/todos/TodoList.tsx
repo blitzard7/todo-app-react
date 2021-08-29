@@ -1,10 +1,17 @@
-import { Button, TextField } from '@material-ui/core';
-import React from 'react';
-import { useFormControls } from '../../hooks/useFormControls';
+import { mockedItems } from '../../data/mockedTodos';
 import './Todos.css';
 
 function TodoList() {
-    return <div className="todo_list_container"></div>;
+    const todoItems = mockedItems;
+    return (
+        <div className="todo_list_container">
+            <ul className="todo_list_ul">
+                {todoItems.map((x, i) => {
+                    return <li key={i}>{x.name}</li>;
+                })}
+            </ul>
+        </div>
+    );
 }
 
 export default TodoList;

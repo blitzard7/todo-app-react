@@ -2,3 +2,7 @@
     display: inline-flex;
     justify-content: space-between;
 }
+
+.todo_list_ul {
+    list-style: none;
+}
