@@ -18,3 +18,7 @@
 .todo_list_ul > li {
     margin-bottom: 10px;
 }
+
+.todo_list_ul > li:hover {
+    cursor: pointer;
+}

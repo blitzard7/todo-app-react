@@ -17,10 +17,15 @@ function TodosPage() {
         setTodoItems((prevState) => [...prevState, todoItem]);
     };
 
+    const handleRemoveTodo = (item: TodoItem) => {
+        const filteredTodos = todoItems.filter((x) => x.name !== item.name);
+        setTodoItems(filteredTodos);
+    };
+
     return (
         <div className="todos_container">
             <TodoForm onAddTodo={handleAddTodo} />
-            <TodoList todoItems={todoItems} />
+            <TodoList todoItems={todoItems} onRemoveTodo={handleRemoveTodo} />
         </div>
     );
 }

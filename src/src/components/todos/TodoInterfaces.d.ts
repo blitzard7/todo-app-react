@@ -5,6 +5,7 @@ export interface TodoItem {
 
 export interface ITodoListProps {
     todoItems: TodoItem[];
+    onRemoveTodo: (item: TodoItem) => void;
 }
 
 export interface ITodoFormProps {
