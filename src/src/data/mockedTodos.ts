@@ -3,10 +3,10 @@ import { TodoItem } from '../components/todos/TodoInterfaces';
 export const mockedItems: TodoItem[] = [
     {
         isActive: true,
-        name: 'Do work',
+        name: 'Example Todo item',
     },
     {
         isActive: true,
-        name: 'test',
+        name: 'Add some stylings :D',
     },
 ];

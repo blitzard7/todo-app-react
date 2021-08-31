@@ -1,8 +1,8 @@
-import { mockedItems } from '../../data/mockedTodos';
+import { ITodoListProps } from './TodoInterfaces';
 import './Todos.css';
 
-function TodoList() {
-    const todoItems = mockedItems;
+function TodoList(props: ITodoListProps) {
+    const { todoItems } = props;
     return (
         <div className="todo_list_container">
             <ul className="todo_list_ul">

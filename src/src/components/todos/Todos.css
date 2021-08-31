@@ -1,3 +1,8 @@
+.todo_list_container {
+    display: flex;
+    justify-content: center;
+}
+
 .todo_list_form {
     display: inline-flex;
     justify-content: space-between;
@@ -5,4 +10,11 @@
 
 .todo_list_ul {
     list-style: none;
+    text-align: left;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.todo_list_ul > li {
+    margin-bottom: 10px;
 }
